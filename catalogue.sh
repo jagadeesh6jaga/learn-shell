@@ -13,6 +13,6 @@ systemctl enable catalogue
 systemctl restart catalogue
 yum install mongodb-org-shell -y
 
-mongo --host MONGODB-SERVER-IPADDRESS </app/schema/catalogue.js
+mongo --host 172.31.83.27 </app/schema/catalogue.js
 
 
