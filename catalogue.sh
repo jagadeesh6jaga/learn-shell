@@ -7,6 +7,8 @@ echo -e '\e[31m>>>>>>>>>>>>>>> adduser  <<<<<<<<<<<<<<<<<<<<<\e[0m'
 useradd roboshop
 echo -e '\e[31m>>>>>>>>>>>>>>> copy service file  <<<<<<<<<<<<<<<<<<<<<\e[0m'
 cp catalogue.service  /etc/systemd/system/catalogue.service
+echo -e '\e[31m>>>>>>>>>>>>>>> copy mongo repo  file  <<<<<<<<<<<<<<<<<<<<<\e[0m'
+cp mongo.repo /etc/yum.repos.d/mongo.repo
 echo -e '\e[31m>>>>>>>>>>>>>>> remove app if already exist  <<<<<<<<<<<<<<<<<<<<<\e[0m'
 rm -rf /app
 echo -e '\e[31m>>>>>>>>>>>>>>> make dir app  <<<<<<<<<<<<<<<<<<<<<\e[0m'
